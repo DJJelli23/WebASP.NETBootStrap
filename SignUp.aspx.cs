@@ -16,6 +16,7 @@ public partial class SignUp : System.Web.UI.Page
 
     protected void btSign_Click(object sender, EventArgs e)
     {
+        //if ()
         String cs = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString1"].ConnectionString;
         using (SqlConnection con = new SqlConnection(cs))
         {
