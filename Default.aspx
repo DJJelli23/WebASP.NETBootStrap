@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -165,6 +165,8 @@
             </footer>
             -->
             <!----------Responsive Website - Part 5 - Footer, Divider, Pull-Right---------------------------->
+
+            <!--Responsive Website - Part 6 - Sign-Up Form, Button, Styling Class-->
         </div>
     </form>
 
