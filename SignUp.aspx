@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SignUp.aspx.cs" Inherits="SignUp" %>
+﻿<!------------------Responsive Website - Part 6 - Sign-Up Form, Button, Styling Class------------------------>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SignUp.aspx.cs" Inherits="SignUp" %>
 
 <!DOCTYPE html>
 
@@ -67,6 +68,7 @@
             </div>
         </div>
         <!--Sign Up-->
+        <!--Responsive Website - Part 6 - Sign-Up Form, Button, Styling Class-->
         <div class="center-page">
             <label class="col-xs-11">Username:</label>
             <div class="col-xs-11">
@@ -74,11 +76,11 @@
             </div>
             <label class="col-xs-11">Password:</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="tbPass" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                <asp:TextBox ID="tbPass" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
             </div>
             <label class="col-xs-11">Confirm Password:</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="tbCPass" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
+                <asp:TextBox ID="tbCPass" runat="server" class="form-control" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
             </div>
             <label class="col-xs-11">Name:</label>
             <div class="col-xs-11">
@@ -86,12 +88,15 @@
             </div>
             <label class="col-xs-11">Email:</label>
             <div class="col-xs-11">
-                <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
+                <asp:TextBox ID="tbEmail" runat="server" class="form-control" placeholder="Email" TextMode="Email"></asp:TextBox>
             </div>
             <div class="col-xs-11 space-vert">
-                <asp:Button ID="btSign" runat="server" class="btn btn-success" Text="Sign Up" />
+                <asp:Button ID="btSign" runat="server" class="btn btn-success" Text="Sign Up" OnClick="btSign_Click" />
+                <asp:Label ID="lblMsg" runat="server"></asp:Label>
             </div>
         </div>
+
+        
 
         <footer class="footer-pos">
             <div class="container">
@@ -103,6 +108,8 @@
                 </p>
             </div>
         </footer>
+
+        <!--Responsive Websiet - Part 7 - Sign-Up Form, Saving to DB, Validation-->
     </form>
     <script src="js/bootstrap.min.js"></script>
 </body>
