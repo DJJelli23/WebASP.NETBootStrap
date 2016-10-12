@@ -65,7 +65,8 @@
                     </div>
                 </div>
             </div>
-            --
+            <!--Responsive Website - Part 2 - Navigation Bar, Logo, Dropdown menu-->
+            -->
             <!--Responsive Website - Part 3 - Carousel, Image Slider-->
             <br />
             <br />
@@ -116,6 +117,8 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <!--Responsive Website - Part 3 - Carousel, Image Slider-->
+
             -->
 <!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
 
@@ -128,24 +131,40 @@
                             width="140" height="140" alt="thumb1"/>
                         <h2>Desert</h2>
                         <p>This is Hot!</p>
-                        <p><a class="btn btn-default" role="button">View &raquo</a></p>
+                        <p><a class="btn btn-default" role="button">View &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
                         <img class="img-circle" src="Images/computer.png" 
                             width="140" height="140" alt="thumb2" />
                         <h2>Computer</h2>
                         <p>I NEEEEEEEEEEEEEDDD IT!!!!!</p>
-                        <p><a class="btn btn-default" role="button">View &raquo</a></p>
+                        <p><a class="btn btn-default" role="button">View &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
                         <img class="img-circle" src="Images/Stripes.png" 
                             width="140" height="140" alt="thumb3" />
                         <h2>Tiger</h2>
                         <p>At least somewhat.</p>
-                        <p><a class="btn btn-default" role="button">View &raquo</a></p>
+                        <p><a class="btn btn-default" role="button">View &raquo;</a></p>
                     </div>
                 </div>
             </div>
+            -->
+<!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
+
+
+
+            <!----------Responsive Website - Part 5 - Footer, Divider, Pull-Right---------------------------->
+            <footer>
+                <div class="container">
+                    <hr />
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>&copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a> 
+                        &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a></p>
+                </div>
+            </footer>
+            -->
+            <!----------Responsive Website - Part 5 - Footer, Divider, Pull-Right---------------------------->
         </div>
     </form>
 
