@@ -60,7 +60,7 @@
                                     <li><a href="#">Denim</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="SignUp.aspx">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>

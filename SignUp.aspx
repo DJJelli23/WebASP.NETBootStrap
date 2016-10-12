@@ -22,9 +22,88 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <div>
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Default.aspx">
+                            <span>
+                                <img alt="Logo" src="Images/Google.png" height="30" />
+                            </span>
+                            TechCybo
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">Men</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Pants</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Women</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Top</a></li>
+                                    <li><a href="#">Leggings</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="SignUp.aspx">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sign Up-->
+        <div class="center-page">
+            <label class="col-xs-11">Username:</label>
+            <div class="col-xs-11">
+                <asp:TextBox ID="tbUname" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
+            </div>
+            <label class="col-xs-11">Password:</label>
+            <div class="col-xs-11">
+                <asp:TextBox ID="tbPass" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+            </div>
+            <label class="col-xs-11">Confirm Password:</label>
+            <div class="col-xs-11">
+                <asp:TextBox ID="tbCPass" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
+            </div>
+            <label class="col-xs-11">Name:</label>
+            <div class="col-xs-11">
+                <asp:TextBox ID="tbName" runat="server" class="form-control" placeholder="Name"></asp:TextBox>
+            </div>
+            <label class="col-xs-11">Email:</label>
+            <div class="col-xs-11">
+                <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
+            </div>
+            <div class="col-xs-11 space-vert">
+                <asp:Button ID="btSign" runat="server" class="btn btn-success" Text="Sign Up" />
+            </div>
+        </div>
+
+        <footer class="footer-pos">
+            <div class="container">
+                <hr />
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>
+                    &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
+                    &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
+                </p>
+            </div>
+        </footer>
     </form>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
