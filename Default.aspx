@@ -71,7 +71,7 @@
             <br />
             <br />
             <%-- Carousel 1 --%>
-            <div class="col-xs-8 col-xs-offset-2">
+            <div class="col-xs-12">
                 <div id="carousel-example-generic" class="carousel slide" data-wrap="true" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -117,24 +117,32 @@
                 </a>
             </div>
             -->
-            <!--Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails-->
-            <div class="container">
+<!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
+
+
+            <div class="container center">
+                <br />
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="img-circle" src="Images/Desert.png" width="140" height="140" />
+                        <img class="img-circle" src="Images/Desert.png" 
+                            width="140" height="140" alt="thumb1"/>
                         <h2>Desert</h2>
                         <p>This is Hot!</p>
-                        <p><a class="btn btn-default" role="button">View</a></p>
+                        <p><a class="btn btn-default" role="button">View &raquo</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-circle" src="Images/computer.png" width="140" height="140" />
+                        <img class="img-circle" src="Images/computer.png" 
+                            width="140" height="140" alt="thumb2" />
                         <h2>Computer</h2>
                         <p>I NEEEEEEEEEEEEEDDD IT!!!!!</p>
+                        <p><a class="btn btn-default" role="button">View &raquo</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-circle" src="Images/Stripes.png" width="140" height="140" />
+                        <img class="img-circle" src="Images/Stripes.png" 
+                            width="140" height="140" alt="thumb3" />
                         <h2>Tiger</h2>
                         <p>At least somewhat.</p>
+                        <p><a class="btn btn-default" role="button">View &raquo</a></p>
                     </div>
                 </div>
             </div>
