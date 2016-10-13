@@ -92,7 +92,7 @@
             </div>
             <div class="col-xs-11 space-vert">
                 <asp:Button ID="btSign" runat="server" class="btn btn-success" Text="Sign Up" OnClick="btSign_Click" />
-                <asp:Label ID="lblMsg" runat="server"></asp:Label>
+                <asp:Label ID="lblMsg" runat="server" Visible="False"></asp:Label>
             </div>
         </div>
 
