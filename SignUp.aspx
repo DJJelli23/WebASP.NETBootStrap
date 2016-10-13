@@ -62,6 +62,7 @@
                                 </ul>
                             </li>
                             <li class="active"><a href="SignUp.aspx">Sign Up</a></li>
+                            <li><a href="SignUp.aspx">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -72,6 +73,7 @@
         <div class="center-page">
             <label class="col-xs-11">Username:</label>
             <div class="col-xs-11">
+                <!--Responsive Website - Part 7 - Sign Up Form, Saving Data to Database-->
                 <asp:TextBox ID="tbUname" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
             </div>
             <label class="col-xs-11">Password:</label>

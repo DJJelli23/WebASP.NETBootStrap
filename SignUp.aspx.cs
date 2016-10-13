@@ -17,6 +17,7 @@ public partial class SignUp : System.Web.UI.Page
 
     protected void btSign_Click(object sender, EventArgs e)
     {
+        /*Responsive Website - Part 7 - Sign Up Form, Saving Data to Database*/
         if (tbUname.Text != "" && tbPass.Text != "" && tbName.Text != "" && tbEmail.Text != "" && tbCPass.Text != "")
         {
             if (tbPass.Text == tbCPass.Text)
