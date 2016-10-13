@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap ASP.NET Training</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/CustomStyle.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,7 +88,7 @@
                             <img src="Images/Tulips.jpg" alt="..." />
                             <div class="carousel-caption">
                                 <h3>Tulips</h3>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Join Us Today</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="SignUp.aspx" role="button">Join Us Today</a></p>
                             </div>
                         </div>
                         <div class="item">
@@ -121,28 +121,28 @@
             <!--Responsive Website - Part 3 - Carousel, Image Slider-->
 
             -->
-<!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
+            <!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
 
 
             <div class="container center">
                 <br />
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="img-circle" src="Images/Desert.png" 
-                            width="140" height="140" alt="thumb1"/>
+                        <img class="img-circle" src="Images/Desert.png"
+                            width="140" height="140" alt="thumb1" />
                         <h2>Desert</h2>
                         <p>This is Hot!</p>
                         <p><a class="btn btn-default" role="button">View &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-circle" src="Images/computer.png" 
+                        <img class="img-circle" src="Images/computer.png"
                             width="140" height="140" alt="thumb2" />
                         <h2>Computer</h2>
                         <p>I NEEEEEEEEEEEEEDDD IT!!!!!</p>
                         <p><a class="btn btn-default" role="button">View &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-circle" src="Images/Stripes.png" 
+                        <img class="img-circle" src="Images/Stripes.png"
                             width="140" height="140" alt="thumb3" />
                         <h2>Tiger</h2>
                         <p>At least somewhat.</p>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             -->
-<!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
+            <!-----------------------Responsive Website - Part 4 - Image Circle, Column Text, Button, Thumbnails--------------------------->
 
 
 
@@ -160,8 +160,10 @@
                 <div class="container">
                     <hr />
                     <p class="pull-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a> 
-                        &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a></p>
+                    <p>
+                        &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
+                        &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
+                    </p>
                 </div>
             </footer>
             -->

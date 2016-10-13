@@ -31,6 +31,7 @@ public partial class SignUp : System.Web.UI.Page
                     lblMsg.Visible = true;
                     lblMsg.ForeColor = Color.Green;
                     lblMsg.Text = "Registration Successful";
+                    Response.Redirect("~/SignIn.aspx");
                 }
             }
             else
