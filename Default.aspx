@@ -74,7 +74,7 @@
             <br />
             <%-- Carousel 1 --%>
             <div class="col-xs-12">
-                <div id="carousel-example-generic" class="carousel slide" data-wrap="true" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-pause="false" data-wrap="true" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

@@ -12,7 +12,15 @@ public partial class SignIn : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        /*Responsive Website - Part 9 - Secure Login-Session, Remember Password-Cookie*/
+        if (!IsPostBack)
+        {
+            if(Response.Cookies["UNAME"] != null && Response.Cookies["UPWD"] != null)
+            {
+                UserName.Text = Request.Cookies["UNAME"].Value;
+                Password.Attributes["value"] = Request.Cookies["UPWD"].Value;
+                CheckBox1.Checked = true;
+            }
+        }
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -20,7 +28,7 @@ public partial class SignIn : System.Web.UI.Page
         string cs = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString1"].ConnectionString;
         using (SqlConnection con = new SqlConnection(cs))
         {
-            SqlCommand cmd = new SqlCommand("Select * from Users where Username='"+UserName+"' and Password ='"+Password+"'", con);
+            SqlCommand cmd = new SqlCommand("Select * from Users where Username='"+UserName.Text+"' and Password ='"+Password.Text+"'", con);
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -28,7 +36,26 @@ public partial class SignIn : System.Web.UI.Page
 
             if (dt.Rows.Count != 0)
             {
+                if (CheckBox1.Checked)
+                {
+                    Response.Cookies["UNAME"].Value = UserName.Text;
+                    Response.Cookies["UPWD"].Value = Password.Text;
 
+                    Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(15);
+                    Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(15);
+                }
+                else
+                {
+                    Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(-1);
+                    Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(-1);
+                }
+
+                Session["USERNAME"] = UserName.Text;
+                Response.Redirect("~/UserHome.aspx");
+            }
+            else
+            {
+                lblError.Text = "Invalid Username or Password!";
             }
         }
     }
