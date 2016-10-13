@@ -11,7 +11,7 @@ public partial class _Default : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-
+            /*Responsive Website - Part 8 - Login Page Design with Validation Controls*/
         }
     }
 }

@@ -61,6 +61,7 @@
                                 </ul>
                             </li>
                             <li><a href="SignUp.aspx">Sign Up</a></li>
+                            <li><a href="SignIn.aspx">Sign In</a></li>
                         </ul>
                     </div>
                 </div>
