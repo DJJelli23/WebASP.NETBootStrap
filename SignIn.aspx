@@ -61,7 +61,6 @@
                                     <li><a href="#">Denim</a></li>
                                 </ul>
                             </li>
-                            <li><a href="SignUp.aspx">Sign Up</a></li>
                             <li class="active"><a href="SignIn.aspx">Sign In</a></li>
                         </ul>
                     </div>
@@ -76,16 +75,17 @@
                         <asp:Label ID="Label1" runat="server" class="col-md-2 control-label" Text="Username"></asp:Label>
                         <div class="col-md-3">
                             <asp:TextBox ID="UserName" class="form-control" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorUsername" CssClass="text-danger" 
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorUsername" CssClass="text-danger"
                                 runat="server" ErrorMessage="The Username is required!" ControlToValidate="UserName"></asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="Label2" runat="server" class="col-md-2 control-label" Text="Password"></asp:Label>
                         <div class="col-md-3">
-                            <asp:TextBox ID="Password" class="form-control" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" CssClass="text-danger" 
-                                runat="server" ErrorMessage="The Password is required!" ControlToValidate="Password"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="Password" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" CssClass="text-danger"
+                                runat="server" ErrorMessage="The Password is required!" ControlToValidate="Password">
+                            </asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="form-group">
@@ -100,6 +100,12 @@
                         <div class="col-md-6">
                             <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btn btn-default" OnClick="Button1_Click" />
                             <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/SignUp.aspx">Sign Up</asp:LinkButton>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-6">
+                            <asp:Label ID="lblError" CssClass="text-danger" runat="server"></asp:Label>
                         </div>
                     </div>
                 </div>

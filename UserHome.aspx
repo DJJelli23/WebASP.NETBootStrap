@@ -20,6 +20,7 @@
     <![endif]-->
 </head>
 <body>
+    <!--Responsive Website - Part 9 - Secure Login-Session, Remember Password-Cookie-->
     <form id="form1" runat="server">
         <div>
             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -59,12 +60,14 @@
                                     <li><a href="#">Denim</a></li>
                                 </ul>
                             </li>
-                            <li><a href="SignUp.aspx">Sign Up</a></li>
-                            <li><a href="SignIn.aspx">Sign In</a></li>
+                            <li>
+                                <asp:Button ID="btnSignOut" runat="server" CssClass="btn btn-default navbar-btn" Text="Log Out" OnClick="btnSignOut_Click" />
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <asp:Label ID="lblSuccess" runat="server" CssClass="text-success"></asp:Label>
             <footer>
                 <div class="container">
                     <hr />
@@ -75,7 +78,9 @@
                     </p>
                 </div>
             </footer>
+
         </div>
+        
     </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
