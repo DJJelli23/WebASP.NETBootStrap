@@ -9,6 +9,6 @@ public partial class RecoverPassword : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        /*<!--Responsive Website - Part 13 - Generating Forgot Password Link with GUID - Send Email-->*/
     }
 }

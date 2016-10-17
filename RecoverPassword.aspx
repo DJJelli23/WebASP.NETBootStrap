@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+    <!--Responsive Website - Part 13 - Generating Forgot Password Link with GUID - Send Email-->
     </div>
     </form>
 </body>
