@@ -95,16 +95,7 @@
                     <asp:Label ID="lblMsg" runat="server" Visible="False"></asp:Label>
                 </div>
             </div>
-            <footer class="footer-pos">
-                <div class="container">
-                    <hr />
-                    <p class="pull-right"><a href="#">Back to top</a></p>
-                    <p>
-                        &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
-                        &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
-                    </p>
-                </div>
-            </footer>
+
         </div>
         <!--Sign Up-->
         <!--Responsive Website - Part 6 - Sign-Up Form, Button, Styling Class-->
@@ -112,6 +103,17 @@
 
         <!--Responsive Websiet - Part 7 - Sign-Up Form, Saving to DB, Validation-->
     </form>
+    <footer class="footer-pos">
+        <div class="container">
+            <hr />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>
+                &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
+                &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
+            </p>
+        </div>
+    </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

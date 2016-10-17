@@ -105,23 +105,31 @@
                     <div class="form-group">
                         <div class="col-md-2"></div>
                         <div class="col-md-6">
+                            <asp:LinkButton ID="forPassRecov" runat="server" PostBackUrl="~/ForgotPassword.aspx">Forgot Password</asp:LinkButton>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-6">
                             <asp:Label ID="lblError" CssClass="text-danger" runat="server"></asp:Label>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer>
-                <div class="container">
-                    <hr />
-                    <p class="pull-right"><a href="#">Back to top</a></p>
-                    <p>
-                        &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
-                        &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
-                    </p>
-                </div>
-            </footer>
+
         </div>
     </form>
+    <footer>
+        <div class="container">
+            <hr />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>
+                &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
+                &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
+            </p>
+        </div>
+    </footer>
+
     <!--Responsive Website - Part 8 - Login Page Design with Validation Controls-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
