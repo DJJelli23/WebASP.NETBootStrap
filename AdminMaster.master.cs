@@ -11,4 +11,10 @@ public partial class AdminMaster : System.Web.UI.MasterPage
     {
         
     }
+
+    protected void btnAdminSignOut_Click(object sender, EventArgs e)
+    {
+        Session["USERNAME"] = null;
+        Response.Redirect("~/Default.aspx");
+    }
 }
