@@ -68,6 +68,7 @@
             </div>
 
         </div>
+        <!--Responsive Website - Part 12 - Forgot Password - Form Designing-->
             <div class="container">
                 <div class="form-horizontal">
                     <h2>Recover Password</h2>
@@ -84,7 +85,8 @@
                     <div class="form-group">
                         <div class="col-md-2"></div>
                         <div class="col-md-6">
-                            <asp:Button ID="btPassRec" runat="server" Text="Send" />
+                            <asp:Button ID="btPassRec" CssClass="btn btn-default" runat="server" Text="Send" OnClick="btPassRec_Click" />
+                            <asp:Label ID="lblPassRec" runat="server"></asp:Label>
                         </div>
                     </div>
                 </div>

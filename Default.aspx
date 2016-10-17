@@ -173,6 +173,7 @@
             <!--Responsive Website - Part 10 - Master Page Design, WebForm-->
             <!--Responsive Website - Part 11 - Multiuser Login System | Admin or User-->
             <!--Responsive Website - Part 12 - Forgot Password - Form Designing-->
+            <!--Responsive Website - Part 13 - Generating Forgot Password Link with GUID - Send Email-->
         </div>
     </form>
 
