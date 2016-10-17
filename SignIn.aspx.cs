@@ -49,6 +49,7 @@ public partial class SignIn : System.Web.UI.Page
                     Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(-1);
                     Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(-1);
                 }
+                /*Part 11*/
                 string uType;
                 uType = dt.Rows[0][5].ToString().Trim();
 

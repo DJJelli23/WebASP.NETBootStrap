@@ -1,21 +1,14 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ForgotPassword.aspx.cs" Inherits="ForgotPassword" %>
 
-<!--Responsive Website - Part 10 - Master Page Design, WebForm-->
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap ASP.NET Training - Master Page</title>
+    <title>Forgot Password</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -26,12 +19,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <!--Navbar-->
             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
@@ -70,23 +61,35 @@
                                 </ul>
                             </li>
                             <li><a href="SignUp.aspx">Sign Up</a></li>
-                            <li><a href="#">Manage</a></li>
-                            <li>
-                                <asp:Button ID="btnAdminSignOut" runat="server" CssClass="btn btn-default navbar-btn" Text="Log Out" OnClick="btnAdminSignOut_Click" />
-                            </li>
+                            <li><a href="SignIn.aspx">Sign In</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!--Main Content-->
-            <div class="container">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
 
         </div>
+            <div class="container">
+                <div class="form-horizontal">
+                    <h2>Recover Password</h2>
+                    <hr />
+                    <h4>Please enter your email address. We will send you the instructions to reset your password.</h4>
+                    <div class="form-group">
+                        <asp:Label ID="lblEmail" runat="server" CssClass="col-md-2 control-label" Text="Your Email: "></asp:Label>
+                        <div class="col-md-3">
+                            <asp:TextBox ID="tbEmailId" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" CssClass="text-danger" 
+                                runat="server" ErrorMessage="Please enter your email ID." ControlToValidate="tbEmailId"></asp:RequiredFieldValidator>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-6">
+                            <asp:Button ID="btPassRec" runat="server" Text="Send" />
+                        </div>
+                    </div>
+                </div>
+            </div>
     </form>
-    <!--Footer-->
     <footer>
         <hr />
         <div class="container">
@@ -97,9 +100,5 @@
             </p>
         </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
