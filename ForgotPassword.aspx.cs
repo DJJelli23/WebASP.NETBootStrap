@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
+using System.Net;
 
 public partial class ForgotPassword : System.Web.UI.Page
 {
@@ -38,9 +39,21 @@ public partial class ForgotPassword : System.Web.UI.Page
                 // Send Mail
                 string toEmailAddress = dt.Rows[0][3].ToString();
                 string userName = dt.Rows[0][1].ToString();
-                string emailBody = "Hi" + userName + ", <br /><br /> Click the link below to reset your password <br />";
-                MailMessage PassRecMail = new MailMessage("youremail@gmail.com", toEmailAddress);
+                string emailBody = "Hi " + userName + ", <br /><br /> Click the link below to reset your password <br /><br /> http://localhost:4309/RecoverPassword.aspx?Uid=" + myGUID;
+                MailMessage PassRecMail = new MailMessage("didomowe@gmail.com", toEmailAddress);
+                PassRecMail.Body = emailBody;
+                PassRecMail.IsBodyHtml = true;
+                PassRecMail.Subject = "Reset Password";
 
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                smtp.Credentials = new NetworkCredential()
+                {
+                    UserName = "didomowe@gmail.com",
+                    Password = "mvpazddd8534"
+                };
+                smtp.EnableSsl = true;
+                smtp.Send(PassRecMail);
+                // Send Mail
 
                 lblPassRec.Text = "Check your email to reset your password.";
                 lblPassRec.ForeColor = Color.Green;
