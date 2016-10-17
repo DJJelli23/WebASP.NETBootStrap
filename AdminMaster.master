@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
-
+<!--Responsive Website - Part 10 - Master Page Design, WebForm-->
 <!DOCTYPE html>
 
 <html>
