@@ -1,13 +1,18 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+
+>>>>>>> origin/Edit_BootASPWeb
 <!--Responsive Website - Part 10 - Master Page Design, WebForm-->
 >>>>>>> origin/Edit_BootASPWeb
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -16,11 +21,16 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+=======
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+>>>>>>> origin/Edit_BootASPWeb
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap ASP.NET Training - Master Page</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/CustomStyle.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,6 +42,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+<<<<<<< HEAD
     <div>
 <<<<<<< HEAD
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -39,6 +50,11 @@
         </asp:ContentPlaceHolder>
 =======
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+=======
+        <div>
+            <!--Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+>>>>>>> origin/Edit_BootASPWeb
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,13 +92,37 @@
                                 </ul>
                             </li>
                             <li><a href="SignUp.aspx">Sign Up</a></li>
-                            <li><a href="SignIn.aspx">Sign In</a></li>
+                            <li><a href="#">Manage</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 >>>>>>> origin/Edit_BootASPWeb
     </div>
+=======
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer>
+                <div class="container">
+                    <hr />
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>
+                        &copy; 2016 Didimowe &middot; <a href="Default.aspx">Home</a>
+                        &middot; <a href="#">About</a> &middot; <a href="#">Contacts</a> &middot; <a href="#">Products</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+>>>>>>> origin/Edit_BootASPWeb
     </form>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
