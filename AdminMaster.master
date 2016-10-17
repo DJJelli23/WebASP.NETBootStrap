@@ -7,7 +7,6 @@
 
 >>>>>>> origin/Edit_BootASPWeb
 <!--Responsive Website - Part 10 - Master Page Design, WebForm-->
->>>>>>> origin/Edit_BootASPWeb
 <!DOCTYPE html>
 
 <html>
@@ -93,6 +92,9 @@
                             </li>
                             <li><a href="SignUp.aspx">Sign Up</a></li>
                             <li><a href="#">Manage</a></li>
+                            <li>
+                                <asp:Button ID="btnAdminSignOut" runat="server" CssClass="btn btn-default navbar-btn" Text="Log Out" OnClick="btnAdminSignOut_Click"/>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -103,7 +105,6 @@
 =======
             <div class="container">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
                 </asp:ContentPlaceHolder>
             </div>
             <footer>

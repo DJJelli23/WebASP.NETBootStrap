@@ -67,7 +67,9 @@
                     </div>
                 </div>
             </div>
-            <asp:Label ID="lblSuccess" runat="server" CssClass="text-success"></asp:Label>
+            <div class="container">
+                <asp:Label ID="lblSuccess" runat="server" CssClass="text-success"></asp:Label>
+            </div>
             <footer>
                 <div class="container">
                     <hr />
@@ -80,7 +82,7 @@
             </footer>
 
         </div>
-        
+
     </form>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
