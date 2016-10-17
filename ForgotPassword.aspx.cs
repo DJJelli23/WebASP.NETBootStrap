@@ -20,6 +20,7 @@ public partial class ForgotPassword : System.Web.UI.Page
 
     protected void btPassRec_Click(object sender, EventArgs e)
     {
+        /*<!--Responsive Website - Part 13 - Generating Forgot Password Link with GUID - Send Email-->*/
         string cs = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString1"].ConnectionString;
         using (SqlConnection con = new SqlConnection(cs))
         {
